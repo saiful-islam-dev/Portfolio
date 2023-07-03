@@ -1,7 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
 import RusemeButton from "../../../component/RusemeButton";
+import { useRef } from 'react';
+
 
 const Navbar = () => {
+  const targetSectionRef = useRef(null);
+
+  const scrollToSection = () => {
+    if (targetSectionRef.current) {
+      targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navOptions = (
     <>
       <li>
@@ -14,7 +24,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/classes"
+          to="/aboutme"
           className={({ isActive }) => (isActive ? "active" : "text-black")}
         >
           About Me
@@ -22,7 +32,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/skill"
           className={({ isActive }) => (isActive ? "active" : "text-black")}
         >
           Skills
@@ -30,7 +40,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/portfolio"
           className={({ isActive }) => (isActive ? "active" : "text-black")}
         >
           Portfolio
@@ -38,8 +48,8 @@ const Navbar = () => {
       </li>
       <li>
         <Link
-          to="#contact"
-          // className={({ isActive }) => (isActive ? "active" : "text-black")}
+          to="/contact"
+          className={({ isActive }) => (isActive ? "active" : "text-black")}
         >
           Contact
         </Link>

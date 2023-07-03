@@ -9,7 +9,7 @@ AOS.init();
 
 const AboutMe = () => {
   return (
-    <div className="py-8">
+    <section className="py-8">
       <div className="grid lg:grid-cols-2">
         <div data-aos="fade-right"
      data-aos-offset="300"
@@ -26,7 +26,7 @@ const AboutMe = () => {
           <RusemeButton/>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
