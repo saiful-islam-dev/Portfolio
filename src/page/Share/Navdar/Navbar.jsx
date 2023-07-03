@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import RusemeButton from "../../../component/RusemeButton";
 
 const Navbar = () => {
   const navOptions = (
@@ -83,7 +84,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case">
-            <samp className="text-3xl font-sans font-bold">Saiful Islam</samp>
+            <samp className="lg:text-3xl font-sans font-bold px-4  lg:ml-3">Saiful Islam</samp>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -92,12 +93,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink
-            to=""
-            className={({ isActive }) => (isActive ? "active" : "text-black")}
-          >
-            <span className="font-semibold text-lg btns-primary">Resume</span>
-          </NavLink>
+          <RusemeButton/>
         </div>
       </div>
     </div>

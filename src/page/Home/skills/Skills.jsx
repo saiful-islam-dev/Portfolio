@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div>
+    <div className="py-8">
       <div>
         <h2 className="text-4xl text-center font-bold py-9">
           PROFESSIONAL SKILLS

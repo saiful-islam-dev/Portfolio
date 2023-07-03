@@ -2,8 +2,8 @@ import { FaLocationDot, FaMobileScreen, FaEnvelope } from "react-icons/fa6";
 
 const ContactMe = () => {
   return (
-    <section id="contact">
-      <div className="text-center py-6">
+    <section id="contact" className="py-8">
+      <div className="text-center pb-6">
         <h2 className="text-3xl font-bold tracking-widest py-4">CONTACT ME</h2>
         {/* <h1 className="font-medium">LET’S Talk About Ideas</h1> */}
       </div>
