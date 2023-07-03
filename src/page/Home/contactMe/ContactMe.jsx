@@ -1,4 +1,8 @@
 import { FaLocationDot, FaMobileScreen, FaEnvelope } from "react-icons/fa6";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const ContactMe = () => {
   return (
@@ -9,7 +13,7 @@ const ContactMe = () => {
       </div>
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row-reverse lg:gap-10">
-          <div className="flex flex-col space-y-12 font-semibold">
+          <div data-aos="fade-right" className="flex flex-col space-y-12 font-semibold">
             <div className="flex items-center gap-3">
             <div className="bg-orange-200 p-4 rounded-md">
               <FaLocationDot className="text-2xl text-orange-500" />
@@ -38,7 +42,7 @@ const ContactMe = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <div className=" lg:flex lg:gap-4">
               <div className="form-control w-full">
                 <label className="label">

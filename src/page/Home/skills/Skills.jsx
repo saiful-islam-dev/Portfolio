@@ -1,6 +1,11 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Skills = () => {
   return (
-    <div className="py-8">
+    <div data-aos="zoom-in-up" className="py-8">
       <div>
         <h2 className="text-4xl text-center font-bold py-9">
           PROFESSIONAL SKILLS

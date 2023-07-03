@@ -1,11 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
 // import HeartButton from '../Button/HeartButton'
 import project_1 from "../../../assets/project1.png";
 import project_2 from "../../../assets/projcet2.png";
 import project_3 from "../../../assets/projcet3.png";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Portfolio = () => {
   return (
-    <div className="pt-8">
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" className="pt-8">
       <div className="text-center pb-2">
         <h2 className="font-bold text-3xl">My Work & Projects</h2>
         <p className="lg:w-96 mx-auto text-lg font-semibold py-4">
@@ -43,7 +50,6 @@ const Portfolio = () => {
             right-3
           "
               >
-                {/* <HeartButton /> */}
               </div>
             </div>
             <div className="font-semibold text-lg p-2">CHEF'S RECIPE</div>
@@ -88,7 +94,6 @@ const Portfolio = () => {
             right-3
           "
               >
-                {/* <HeartButton /> */}
               </div>
             </div>
             <div className="font-semibold text-lg p-2">Toy Marketplace</div>
@@ -133,7 +138,6 @@ const Portfolio = () => {
             right-3
           "
               >
-                {/* <HeartButton /> */}
               </div>
             </div>
             <div className="font-semibold text-lg p-2">Summer sports</div>
