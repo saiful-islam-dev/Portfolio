@@ -1,16 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import RusemeButton from "../../../component/RusemeButton";
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
 
 const Navbar = () => {
-  const targetSectionRef = useRef(null);
+  // const targetSectionRef = useRef(null);
 
-  const scrollToSection = () => {
-    if (targetSectionRef.current) {
-      targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const scrollToSection = () => {
+  //   if (targetSectionRef.current) {
+  //     targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
   const navOptions = (
     <>
