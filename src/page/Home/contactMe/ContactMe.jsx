@@ -1,6 +1,6 @@
 import { FaLocationDot, FaMobileScreen, FaEnvelope } from "react-icons/fa6";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
@@ -13,19 +13,25 @@ const ContactMe = () => {
       </div>
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row-reverse lg:gap-10">
-          <div data-aos="fade-right" className="flex flex-col space-y-12 font-semibold">
+          <div
+            data-aos="fade-right"
+            className="flex flex-col space-y-12 font-semibold"
+          >
             <div className="flex items-center gap-3">
-            <div className="bg-orange-200 p-4 rounded-md">
-              <FaLocationDot className="text-2xl text-orange-500" />
+              <div className="bg-orange-200 p-4 rounded-md">
+                <FaLocationDot className="text-2xl text-orange-500" />
               </div>
               <div>
                 <h3>Address</h3>
-                <p>202 Dog Hill Lane Beloit, KS 67420</p>
+                <p>
+                  Village / Road Bhajandanga, Post office: <br /> Faridpur- 7800,
+                  Faridpur Bangladesh
+                </p>
               </div>
             </div>
             <div className="flex items-center  gap-3">
-            <div className="bg-orange-200 p-4 rounded-md">
-              <FaMobileScreen className="text-2xl text-orange-500" />
+              <div className="bg-orange-200 p-4 rounded-md">
+                <FaMobileScreen className="text-2xl text-orange-500" />
               </div>
               <div>
                 <h3>Phone</h3>
@@ -33,8 +39,8 @@ const ContactMe = () => {
               </div>
             </div>
             <div className="flex items-center  gap-3">
-            <div className="bg-orange-200 p-4 rounded-md">
-              <FaEnvelope className="text-2xl text-orange-500" />
+              <div className="bg-orange-200 p-4 rounded-md">
+                <FaEnvelope className="text-2xl text-orange-500" />
               </div>
               <div>
                 <h3>Email</h3>
@@ -46,7 +52,9 @@ const ContactMe = () => {
             <div className=" lg:flex lg:gap-4">
               <div className="form-control w-full">
                 <label className="label">
-                  <span className="label-text font-bold uppercase">Full Name</span>
+                  <span className="label-text font-bold uppercase">
+                    Full Name
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -56,7 +64,9 @@ const ContactMe = () => {
               </div>
               <div className="form-control w-full">
                 <label className="label">
-                  <span className="label-text font-bold">YOUR EMAIL ADDRESS</span>
+                  <span className="label-text font-bold">
+                    YOUR EMAIL ADDRESS
+                  </span>
                 </label>
                 <input
                   type="text"
@@ -85,7 +95,9 @@ const ContactMe = () => {
                 placeholder="MESSAGE"
               />
             </div>
-            <button className="btn btn-outline rounded-3xl mt-3 btn-error">Send Message</button>
+            <button className="btn btn-outline rounded-3xl mt-3 btn-error">
+              Send Message
+            </button>
           </div>
         </div>
       </div>

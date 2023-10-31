@@ -1,7 +1,8 @@
 const RusemeButton = () => {
   const handleDownload = () => {
-    window.open("https://drive.google.com/uc?export=download&id=1NSNBoyyYcslag-45i6D3o7SzMbebum5p");
+window.open("https://drive.google.com/u/0/uc?id=1vrZjxzqwnzHvESMHG7ZcBYeGpFFiLoBq&export=download");
   };
+
   return (
     <span
       className="font-semibold text-lg btns-primary"
